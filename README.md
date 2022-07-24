@@ -3,28 +3,28 @@
 ## 1. Introducción
 
 Proyecto que implementa la web para froita.com. Ha sido realizada
-mediate [Jekyll](https://jekyllrb.com/), una herramienta desarrollada en lenguaje Ruby, que
+mediate [Jekyll](jekyllrb.com/), una herramienta desarrollada en lenguaje Ruby, que
 permite crear de forma bastante sencilla y potente webs estáticas. Este tipo de páginas basadas en Jekyll son muy cómodas si nuestra web la queremos alojar en GitHub, pues reconoce los proyectos realizados con esta herramienta y nos facilita su publicación y desarrollo.
 
-Ruby es un leguaje de programación interpretado, similar a un Python o PHP. Los distintos módulos desarrollados por los programadores se denominan gemas. Existe una web donde podemos descargar gemas denominado [RubyGems](https://rubygems.org/). Aquí es desde donde podemos descargar Jekyll.
+[Ruby](www.ruby-lang.org) es un leguaje de programación interpretado, similar a un Python o PHP. Los distintos módulos desarrollados por los programadores se denominan **gemas**. Existe una web donde podemos descargar gemas denominado [RubyGems](rubygems.org/). Aquí es desde donde podemos descargar Jekyll.
 
-Jekyll permite que desarrolladores implementen plantillas de web y las empaqueten como una gema de Ruby, que podremos descargar y modificar según nos interese. Es una forma cómoda de afrontar un desarrollo de una web sin tener que comenzar desde cero con Jekyll. En nuestro caso vamos a usar la gema [minimal-mistakes-jekyll](https://mmistakes.github.io/minimal-mistakes/) creada por
-[Michael Rose](https://github.com/mmistakes).
+Jekyll permite que desarrolladores implementen plantillas de web y las empaqueten como una gema de Ruby, que podremos descargar y modificar según nos interese. Es una forma cómoda de afrontar un desarrollo de una web sin tener que comenzar desde cero con Jekyll. En nuestro caso vamos a usar la gema [minimal-mistakes-jekyll](mmistakes.github.io/minimal-mistakes/) creada por
+[Michael Rose](github.com/mmistakes).
 
 ## 2. Instalación del entorno de desarrollo
 
 Vamos a dar unas pinceladas muy concretas para la instalación y ejecución
 del entorno necesario para desarrollar nuestra web en Windows y en Linux.
 
-### 2.1 Entorno en Windows
+### 2.1 Entorno Windows
 
-Para poder desarrollar nuestra web basada en Jekyll en windows necesitamos instalar una versión de Ruby específica para este sistema operativo. En nuestro caso vamos a instalar la versión 2.7 que podemos encontrar en [RubyInstaller](https://rubyinstaller.org/).
+Para poder desarrollar nuestra web basada en Jekyll en windows necesitamos instalar una versión de Ruby específica para este sistema operativo. En nuestro caso vamos a instalar la versión 2.7 que podemos encontrar en [RubyInstaller](rubyinstaller.org/).
 
-El proyecto **RubyInstaller** proporciona un instalador autónomo basado en Windows que incluye un entorno de ejecución en lenguaje Ruby y un conjunto básico de RubyGems y extensiones necesarias, integrado con una instalación de [MSYS2](https://www.msys2.org/).
+El proyecto **RubyInstaller** proporciona un instalador autónomo basado en Windows que incluye un entorno de ejecución en lenguaje Ruby y un conjunto básico de RubyGems y extensiones necesarias, integrado con una instalación de [MSYS2](www.msys2.org/).
 
 **MSYS2** es una colección de herramientas y bibliotecas que proporciona un entorno fácil de usar para crear, instalar y ejecutar software nativo de Windows.
 
-Consiste en un terminal de línea de comandos llamado **mintty**, bash, sistemas de control de versiones como git y subversion, herramientas como tar y awk e incluso sistemas de compilación como autotools, todos basados ​​en una versión modificada de [Cygwin](https://www.cygwin.com/). A pesar de que algunas de estas partes centrales se basan en Cygwin, el objetivo principal de MSYS2 es proporcionar un entorno de compilación para el software nativo de Windows y las partes que utilizan Cygwin se mantienen al mínimo. MSYS2 proporciona compilaciones nativas actualizadas para GCC, mingw-w64, CPython, CMake, Meson, OpenSSL, FFmpeg, Rust, **Ruby**, solo por nombrar algunos.
+Consiste en un terminal de línea de comandos llamado **mintty**, bash, sistemas de control de versiones como git y subversion, herramientas como tar y awk e incluso sistemas de compilación como autotools, todos basados ​​en una versión modificada de [Cygwin](www.cygwin.com/). A pesar de que algunas de estas partes centrales se basan en Cygwin, el objetivo principal de MSYS2 es proporcionar un entorno de compilación para el software nativo de Windows y las partes que utilizan Cygwin se mantienen al mínimo. MSYS2 proporciona compilaciones nativas actualizadas para GCC, mingw-w64, CPython, CMake, Meson, OpenSSL, FFmpeg, Rust, **Ruby**, solo por nombrar algunos.
 
 Una vez hemos instalado Ruby en nuestro sistema operativo, abrimos un terminal de windows, **cmd.exe**, y nos disponemos a instalar las dos primeras gemas necesarias para desarrollar con Jekyll. Esto se consigue con la herramienta **gem**, contenida en la instalación previa de RubyInstaller. Estas gemas con **jekyll** y **bundler**. Para instalarlas ejecutamos:
 
@@ -44,7 +44,7 @@ Para verificar que Jekyll está disponible, basta ejecutarlo por línea de coman
 jekyll -v
 ```
 
-### 2.2 Entorno en Linux
+### 2.2 Entorno Linux
 
 En Linux para que arranque el comando jekyll hay que lanzarlo a través de bundle, por ejemplo:
 
